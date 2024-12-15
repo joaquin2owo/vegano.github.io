@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>VEGANO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="vegan.jpeg" type="image/x-icon">
+</head>
+<body class="body">
+    <header class="header">
+        <img src="vegan.jpeg" alt="">
+        <nav>
+        <a href="index.html">inicio</a>
+        <a href="beneficios.html">beneficios</a>
+        <a href="recetas.html">recetas</a>
+        <a href="recursos.html">recursos</a>
+        <a href="mitos.html">mitos</a>
+        </nav>
+    </header>
+    <main class="main">
+        <h1 id="button">Recursos</h1>
+        <section>
+            <p id="text" class="receta">
+                Mis principales recursos fueron influencers, por eso dejo un listado aca abajo de los mejores:</br>
+                <a href="https://youtube.com/@damoenlaweb?si=395uHDwpdtcknCmg">Damoenlaweb</a>
+                <a href="https://youtube.com/@ticianovilardi?si=vIziXwLbkuQTTHPM">Ticiano Vilardi</a>
+                <a href="https://youtube.com/@sebasvegano?si=wY3dRpmFdKUIbbBL">Sebas Vegano</a>
+                <a href="">Facu Okabe (instagram)</a>
+            </p>
+        </section>
+    </main>
+    <footer>© 2024 todos los derechos reservados</footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggleButton = document.getElementById("button");
+            const hiddenText = document.getElementById("text");
+
+            toggleButton.addEventListener("click", () => {
+                hiddenText.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+</html>

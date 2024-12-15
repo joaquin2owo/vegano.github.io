@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>VEGANO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="vegan.jpeg" type="image/x-icon">
+</head>
+<body class="body">
+    <header class="header">
+        <img src="vegan.jpeg" alt="">
+        <nav>
+        <a href="index.html">inicio</a>
+        <a href="beneficios.html">beneficios</a>
+        <a href="recetas.html">recetas</a>
+        <a href="recursos.html">recursos</a>
+        <a href="mitos.html">mitos</a>
+        </nav>
+    </header>
+    <main class="main">
+        <h1 id="button">Recetas</h1>
+        <section>
+            <p id="text" class="receta">
+                Aquí hay recetas típicas de una dieta basada en plantas:<br>
+                <a href="https://youtu.be/ge7F5OAkTLM?si=sEokEY6dlM_NetBx" target="_blank">Hummus</a><br>
+                <a href="https://youtu.be/6lUD64jFJ60?si=fD3nDUXgaWEOkSTZ" target="_blank">Milanesa de soja</a><br>
+                <a href="https://youtu.be/iMeVxppq30U?si=7vaT7w77keozLzs3" target="_blank">Seitan</a><br>
+                <a href="https://youtube.com/shorts/nPMteHYsh6k?si=4Eu9okvOBF-UWXPg" target="_blank">Tacos veganos</a><br>
+                Y un largo etcétera.
+            </p>
+        </section>
+    </main>
+    <footer>© 2024 todos los derechos reservados</footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggleButton = document.getElementById("button");
+            const hiddenText = document.getElementById("text");
+
+            toggleButton.addEventListener("click", () => {
+                hiddenText.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+</html>

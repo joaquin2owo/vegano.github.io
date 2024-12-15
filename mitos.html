@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>VEGANO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="vegan.jpeg" type="image/x-icon">
+</head>
+<body class="body">
+    <header class="header">
+        <img src="vegan.jpeg" alt="">
+        <nav>
+        <a href="index.html">inicio</a>
+        <a href="beneficios.html">beneficios</a>
+        <a href="recetas.html">recetas</a>
+        <a href="recursos.html">recursos</a>
+        <a href="mitos.html">mitos</a>
+        </nav>
+    </header>
+    <main class="main">
+        <h1 id="button">Mitos</h1>
+        <section>
+            <p id="text">
+                <strong>1. El veganismo no es saludable</strong><br>
+                <em>Mito:</em> Las dietas veganas no proporcionan suficientes nutrientes esenciales como proteínas, hierro, calcio y vitamina B12.<br>
+                <em>Realidad:</em> Con una planificación adecuada, una dieta vegana puede ser saludable y proporcionar todos los nutrientes necesarios. Los alimentos veganos ricos en proteínas incluyen legumbres, tofu, tempeh y frutos secos. Además, existen suplementos para la vitamina B12 y alternativas enriquecidas con calcio y hierro.<br><br>
+            
+                <strong>2. El veganismo es caro</strong><br>
+                <em>Mito:</em> Comer vegano es mucho más caro que una dieta omnívora.<br>
+                <em>Realidad:</em> Muchos alimentos básicos y accesibles, como arroz, lentejas, frijoles, verduras y frutas, son veganos y económicos. La clave está en planificar bien las comidas y comprar productos frescos y de temporada.<br><br>
+            
+                <strong>3. Las dietas veganas son aburridas y poco sabrosas</strong><br>
+                <em>Mito:</em> Comer vegano significa comer solo ensaladas y platos sin sabor.<br>
+                <em>Realidad:</em> Existen una amplia variedad de platos sabrosos en la cocina vegana. Desde hamburguesas veganas hasta pizzas, pasteles, y currys, hay muchas formas creativas de disfrutar de una comida deliciosa sin productos de origen animal.<br><br>
+            
+                <strong>4. El veganismo no es adecuado para los niños</strong><br>
+                <em>Mito:</em> Los niños no pueden crecer y desarrollarse adecuadamente si siguen una dieta vegana.<br>
+                <em>Realidad:</em> Los niños pueden llevar una dieta vegana equilibrada, siempre que se planifique adecuadamente para asegurar que obtienen los nutrientes que necesitan para su crecimiento. Muchos pediatras apoyan el veganismo si se hace de forma cuidadosa y con la inclusión de suplementos cuando sea necesario (como vitamina B12).<br><br>
+            
+                <strong>5. El veganismo no es sostenible ni ecológico</strong><br>
+                <em>Mito:</em> El veganismo no es la mejor opción para el medio ambiente.<br>
+                <em>Realidad:</em> En comparación con las dietas basadas en productos animales, una dieta vegana tiene una huella ecológica mucho más baja. La producción de alimentos vegetales generalmente requiere menos recursos (agua, tierra, energía) y produce menos emisiones de gases de efecto invernadero.<br><br>
+            
+                <strong>6. Las proteínas vegetales no son completas</strong><br>
+                <em>Mito:</em> Las proteínas vegetales no son completas y no contienen todos los aminoácidos esenciales.<br>
+                <em>Realidad:</em> Aunque algunas fuentes vegetales de proteínas no contienen todos los aminoácidos esenciales por sí solas, combinando alimentos como legumbres y cereales (por ejemplo, arroz con frijoles), se puede obtener una proteína completa.<br><br>
+            
+                <strong>7. Los veganos no tienen energía suficiente</strong><br>
+                <em>Mito:</em> Las personas veganas están siempre fatigadas o carecen de energía.<br>
+                <em>Realidad:</em> Si se sigue una dieta vegana bien equilibrada, que incluya una variedad de alimentos ricos en nutrientes, es totalmente posible tener una energía adecuada. Muchos atletas veganos demuestran que se puede tener un rendimiento físico excelente siguiendo esta dieta.<br><br>
+            
+                <strong>8. El veganismo es solo para personas que quieren perder peso</strong><br>
+                <em>Mito:</em> Las personas veganas lo hacen principalmente para bajar de peso.<br>
+                <em>Realidad:</em> Si bien una dieta vegana puede ayudar a algunas personas a perder peso, el veganismo es principalmente una elección ética, ambiental y de salud. La pérdida de peso no es su único objetivo.
+            </p>
+        </section>
+    </main>
+    <footer>© 2024 todos los derechos reservados</footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggleButton = document.getElementById("button");
+            const hiddenText = document.getElementById("text");
+
+            toggleButton.addEventListener("click", () => {
+                hiddenText.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+</html>

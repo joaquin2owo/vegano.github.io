@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>VEGANO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="vegan.jpeg" type="image/x-icon">
+</head>
+<body class="body">
+    <header class="header">
+        <img src="vegan.jpeg" alt="">
+        <nav>
+        <a href="index.html">inicio</a>
+        <a href="beneficios.html">beneficios</a>
+        <a href="recetas.html">recetas</a>
+        <a href="recursos.html">recursos</a>
+        <a href="mitos.html">mitos</a>
+        </nav>
+    </header>
+    <main class="main">
+        <h1 id="button">¿Qué es el Veganismo?</h1>
+        <p id="text">El veganismo es un estilo de vida que busca reducir el sufrimiento animal, proteger el medio ambiente y promover la salud, evitando el consumo de productos de origen animal.</p>
+    </main>
+    <footer>© 2024 todos los derechos reservados</footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggleButton = document.getElementById("button");
+            const hiddenText = document.getElementById("text");
+
+            toggleButton.addEventListener("click", () => {
+                hiddenText.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+</html>

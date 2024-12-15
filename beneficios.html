@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneficios del Veganismo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <header class="header">
+        <img src="vegan.jpeg" alt="Veganismo">
+        <nav>
+            <a href="index.html">inicio</a>
+            <a href="beneficios.html">Beneficios</a>
+            <a href="recetas.html">Recetas</a>
+            <a href="recursos.html">Recursos</a>
+            <a href="mitos.html">Mitos</a>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <h1 id="button">Los Principales Beneficios del Veganismo</h1>
+        
+        <section id="text" class="beneficios-section">
+            <h2>1. Cuidado Animal</h2>
+            <p>El veganismo es principalmente una práctica para evitar el sufrimiento y la explotación de los animales. Al evitar productos derivados de ellos, ayudamos a reducir el daño que causamos a otras especies.</p>
+            
+            <h2>2. Salud</h2>
+            <p>Las principales academias de nutrición y dietética avalan una dieta basada en plantas. Esta dieta puede mejorar la salud cardiovascular, reducir el riesgo de diabetes y promover un peso saludable.</p>
+            <ul>
+                <li>Academia de Nutrición y Dietética de Estados Unidos</li>
+                <li>Sociedad Americana del Cáncer</li>
+                <li>Organización Mundial de la Salud (OMS)</li>
+            </ul>
+        </section>
+        
+    </main>
+
+    <footer>© 2024 Todos los derechos reservados</footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Obtener el título (h1) y la sección (section)
+            const toggleButton = document.getElementById("button");
+            const section = document.getElementById("text");
+
+            // Función para alternar la visibilidad de la sección
+            toggleButton.addEventListener("click", () => {
+                section.classList.toggle("active");
+            });
+        });
+    </script
+</body>
+</html>
